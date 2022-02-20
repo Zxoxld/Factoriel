@@ -1,0 +1,16 @@
+def saiasirN():
+    n= int(input("Doner N : "))
+    while not(2<n<1000):
+        n = int(input("Doner N (2<N<1000) : "))
+    return n
+
+
+def factoriel(n):
+    nb=1
+    for i in range(2,n+1):
+        nb=nb*i
+    return nb
+
+
+n=saiasirN()
+print(factoriel(n))
